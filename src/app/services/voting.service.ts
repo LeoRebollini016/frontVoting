@@ -22,4 +22,18 @@ public url:string;
     let headers = new HttpHeaders().set('Content-Type','application/json');
     return this._http.get(this.url+'students', {headers: headers});
   }
+  getStudent(id: any): Observable<any>{
+    let headers = new HttpHeaders().set('Content-Type','application/json');
+    return this._http.get(this.url+'student/'+id, {headers: headers});
+  }
+  deleteStudent(id: any): Observable<any>{
+    let headers = new HttpHeaders().set('Content-Type', 'application/json');
+    return this._http.delete(this.url+'student/'+id, {headers: headers});
+  }
+  
+  createStudent(student: Student): Observable<any>{
+    let params = JSON.stringify(student);
+    let headers = new HttpHeaders().set('Content-Type','application/json');
+    return this._http.post(this.url+'registration', params, {headers: headers});
+  }
 }
