@@ -6,6 +6,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ErrorComponent } from './components/error/error.component';
 import { StudentsComponent } from './components/students/students.component';
 import { RegisterComponent} from './components/register/register.component';
+import { VoteComponent } from './components/vote/vote.component';
 
 const appRoutes: Routes = [
 	{path: '', component: AboutComponent},
@@ -13,6 +14,7 @@ const appRoutes: Routes = [
 	{path: 'login',component:LoginComponent},
 	{path: 'students',component:StudentsComponent},
 	{path: 'register', component:RegisterComponent},
+	{path: 'vote', component:VoteComponent},
 	{path:'**',component:ErrorComponent}
 ];
 

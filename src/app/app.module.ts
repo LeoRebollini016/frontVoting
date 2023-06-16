@@ -11,6 +11,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ErrorComponent } from './components/error/error.component';
 import { StudentsComponent } from './components/students/students.component';
 import { RegisterComponent } from './components/register/register.component';
+import { VoteComponent } from './components/vote/vote.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RegisterComponent } from './components/register/register.component';
     AboutComponent,
     ErrorComponent,
     StudentsComponent,
-    RegisterComponent
+    RegisterComponent,
+    VoteComponent
   ],
   imports: [
     BrowserModule,
