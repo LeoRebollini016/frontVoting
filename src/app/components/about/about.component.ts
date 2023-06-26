@@ -7,13 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
   public title: string;
-  public subtitle: string;
-  public web: string;
+  public autor1: string;
+  public autor2: string;
+
 
   constructor() { 
-      this.title= "Leonel Rebollini";
-      this.subtitle = "Desarrollador web";
-      this.web = "leorebolliniWeb.com.ar";
+      this.title= "Sistema de Votación electronico";
+      this.autor1 = "Gaston Alanis"; 
+      this.autor2 = "Leonel Rebollini" ;
   }
 
   ngOnInit(): void {

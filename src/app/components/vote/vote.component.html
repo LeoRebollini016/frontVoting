@@ -4,8 +4,27 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Vote</title>
-</head>
-<body>
 
+</head>
+
+<body>
+	<div class="container">
+	<h2>Votación</h2>
+
+	<div id="vote">
+		    <form id="formulario">
+				<label for="opciones">Elige el candidato que prefieras</label><br/>
+				<div class="candidate" *ngFor="let datos of datos">
+					<input type="radio" name="candidato">
+					<h4>Nombre </h4>{{datos.name}}
+					<h4>Mesa </h4>{{datos.mesa}}
+				</div>
+				<br>
+				<div id="votar">
+					<button type="submit"><a (click)="vote()"><strong> Votar</strong></a></button>
+				</div>
+		    </form>
+		</div>
+	</div>
 </body>
 </html>

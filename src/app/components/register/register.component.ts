@@ -11,6 +11,10 @@ import { Router,ActivatedRoute,Params } from '@angular/router';
   providers:[VotingService]
 })
 export class RegisterComponent implements OnInit{
+ // public url: string;
+
+  constructor(){}
+  
   ngOnInit(): void {}
 }
 /* implements OnInit {
@@ -55,4 +59,17 @@ export class RegisterComponent implements OnInit{
         console.log(<any>error);
       }
     );
-  }*/
+  }
+Comprobar email
+function comprobarMail() {
+    var m = document.getElementById("mail").value;
+    var expreg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+      
+    if(! expreg.test(m)) {
+      alert("El mail NO es correcto");
+      document.getElementById("mail").focus();
+    } 
+
+  }
+
+  */
